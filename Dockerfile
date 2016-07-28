@@ -38,4 +38,4 @@ EXPOSE 22
 WORKDIR /playbook
 
 #CMD ["/usr/sbin/sshd", "-D"]
-ENTRYPOINT ["ansible-playbook"]
+CMD ["/bin/bash"]
