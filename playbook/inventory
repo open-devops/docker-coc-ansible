@@ -1,0 +1,8 @@
+#sonarqube1 ansible_ssh_host=172.17.0.16 ansible_ssh_user=root ansible_ssh_pass=root ansible_sudo_pass=root
+#docker_host_01 ansible_ssh_host=16.187.145.11 ansible_ssh_user=appu1 ansible_ssh_pass=1Qaz2wsx ansible_sudo_pass=1Qaz2wsx
+
+#[docker_host]
+#docker_host_01
+
+[sonar_containers]
+pipelinedocker_cap_cq_1

@@ -1,0 +1,7 @@
+---
+Host docker_host_01
+  HostName 16.187.145.11
+  User docker
+  UserKnownHostsFile /dev/null
+  IdentityFile ~/.docker/machine/machines/docker01/id_rsa
+  StrictHostKeyChecking no
