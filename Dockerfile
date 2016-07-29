@@ -15,7 +15,6 @@ RUN mkdir /playbook && \
 
 COPY playbook /playbook
 
-EXPOSE 22
 WORKDIR /playbook
 
 ENTRYPOINT ["/bin/bash"]
