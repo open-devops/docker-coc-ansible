@@ -2,7 +2,7 @@
 # Image for Open DevOps Pipeline
 #
 #VERSION : 0.1
-FROM ubuntu:14.04
+FROM docker.io/devopsopen/docker-base
 
 #Maintainer
 MAINTAINER Open DevOps Team <open.devops@gmail.com>
@@ -34,8 +34,11 @@ ENV ANSIBLE_LIBRARY /opt/ansible/ansible/library
 
 COPY playbook /playbook
 
+# install docker
+RUN yum -y install docker
+
 EXPOSE 22
 WORKDIR /playbook
 
 #CMD ["/usr/sbin/sshd", "-D"]
-CMD ["/bin/bash"]
+ENTRYPOINT ["/bin/bash"]
